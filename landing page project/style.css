@@ -11,13 +11,17 @@
         font-family: 'montserrat', sans-serif; 
         font-size: 120%;
         color: var (--black);
-        background-color: var(--body-bg);
+        background-color: black;
         margin: 0;
         font-weight: 400;
         
     }
     h1,h2,h3,h4 {
         font-weight: 600;
+        color: white;
+    }
+    p {
+        color: white;
     }
     header,main,footer {
     margin: 0;
@@ -51,7 +55,6 @@
     }
     #tagline{
         grid-area: tag;
-        background-color: #ffffff99;
         align-self: center;
         padding: 0.5em 1em;
     }
@@ -79,7 +82,7 @@
         background-image: linear-gradient(#cddbdc #d4e1e7);
         background-image: url("images/pexels-pixabay-533953.jpg");
         background-repeat: no-repeat;
-        background-position:bottom right 200px;
+        background-position: right 200px;
         background-size: contain;
 
     }
