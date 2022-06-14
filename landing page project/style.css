@@ -38,11 +38,34 @@
     #hero nav{
         display: flex;
         justify-content: space-between;
+        padding: 0.5em 1em;
+        font-size: small;
+    }
+    #sign-up-discount {
+        grid-area: discnt;
+        background-color: var(--crimson);
+        color: bar(--body-bg);
+        display: flex;
+        justify-content: center;
+        padding: 0.5em 1em;
+    }
+    #tagline{
+        grid-area: tag;
+        background-color: #ffffff99;
+        align-self: center;
+        padding: 0.5em 1em;
+    }
+    #products {
+        font-size: 90%;
+        display: grid;
+
     }
     #hero nav ul{
         list-style-type: none;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        margin: 0;
     }
     #hero nav a{
         display: block;
@@ -51,6 +74,14 @@
         color: var(--dark-gray);
         text-transform: uppercase;
         font-weight:bold;
+    }
+    #hero {
+        background-image: linear-gradient(#cddbdc #d4e1e7);
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-position:bottom right 200px;
+        background-size: contain;
+
     }
     nav a {
         color:var(--dark-gray);
@@ -61,4 +92,26 @@
     background-color: var(--dark-blue);
     }
     
+    @media only screen and (mid-width: 600px) {
+        #hero{
+            background-image: url();
+            background-size: cover;
+            background-position: -750px bottom;
+        display: grid;
+        grid-template-columns: 1fr,1fr,2fr,2fr,2fr;
+        grid-template-rows: 
+        minmax(100px, auto)
+        minmax(80px, auto)
+        minmax(50vh, 60vh);
+        grid-template-areas: "nav nav nav nav";
+        }
+    section#tagline{
+        background-color: rgba(0,0,0,0);
+    }
+}
+    @media only screen and (mid-width: 900px) {
+        #hero{
+        background-position: bottom left;
+        }
+        }
     
