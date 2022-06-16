@@ -44,6 +44,8 @@
         justify-content: space-between;
         padding: 0.5em 1em;
         font-size: small;
+        color: white;
+        grid-area: nav;
     }
     #sign-up-discount {
         grid-area: discnt;
@@ -61,7 +63,7 @@
     #products {
         font-size: 90%;
         display: grid;
-
+        grid-area: prod;
     }
     #hero nav ul{
         list-style-type: none;
@@ -69,25 +71,26 @@
         flex-direction: row;
         align-items: center;
         margin: 0;
+        color: white;
     }
     #hero nav a{
         display: block;
         padding: 0.5em 1em;
         text-decoration: 1;
-        color: var(--dark-gray);
+        color: white;
         text-transform: uppercase;
         font-weight:bold;
     }
     #hero {
         background-image: linear-gradient(#cddbdc #d4e1e7);
-        background-image: url("images/pexels-pixabay-533953.jpg");
+        background-image: url("landing page project/images/grain-g61fecef28_1920.jpg");
         background-repeat: no-repeat;
         background-position: right 200px;
         background-size: contain;
 
     }
     nav a {
-        color:var(--dark-gray);
+        color: white;
     }
     footer{
     color: white;
@@ -101,12 +104,17 @@
             background-size: cover;
             background-position: -750px bottom;
         display: grid;
-        grid-template-columns: 1fr,1fr,2fr,2fr,2fr;
+        grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
         grid-template-rows: 
-        minmax(100px, auto)
-        minmax(80px, auto)
-        minmax(50vh, 60vh);
-        grid-template-areas: "nav nav nav nav";
+            minmax(100px, auto)
+            minmax(80px, auto)
+            minmax(50vh, 60vh);
+        grid-template-areas:
+            "nav nav nav nav nav"
+            "discnt discnt discnt discnt discnt"
+            ". tag tag . ."
+            ". . product product ."
+            ;
         }
     section#tagline{
         background-color: rgba(0,0,0,0);
